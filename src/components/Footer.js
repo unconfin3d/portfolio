@@ -12,22 +12,26 @@ import {
 import config from "../constants/constants";
 
 const Footer = () => {
+  const handleIconClick = (url) => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
   return (
     <div className="footer">
       <div className="footer-container">
         <div className="footer-left">
           <div className="location" style={{justifyContent:"space-between"}}>
             
-              <p> <FaHome size={23} style={{ color: "#fff" ,marginRight:"2rem"}} /> {config.personal_details.address_l1}</p>
-
-          </div>
+              <p> <FaHome size={20} style={{ color: "#fff" ,marginRight:"2rem"}} /> {config.personal_details.address_l1}</p>
+              {/* <h4> <FaPhone size={20} style={{ color: "#fff" ,marginRight:"2rem" }} /> {config.personal_details.phone}</h4>
+              <h4>  <FaMailBulk size={20} style={{ color: "#fff" ,marginRight:"2rem"}} /> {config.personal_details.email}</h4> */}
+           </div>
           <div className="phone">
-              <h4> <FaPhone size={23} style={{ color: "#fff" ,marginRight:"2rem" }} /> {config.personal_details.phone}</h4>
+              <h4> <FaPhone size={20} style={{ color: "#fff" ,marginRight:"2rem" }} /> {config.personal_details.phone}</h4>
           </div>
 
           <div className="email">
-              <h4>  <FaMailBulk size={23} style={{ color: "#fff" ,marginRight:"2rem"}} /> {config.personal_details.email}</h4>
-          </div>
+              <h4>  <FaMailBulk size={20} style={{ color: "#fff" ,marginRight:"2rem"}} /> {config.personal_details.email}</h4>
+          </div> 
         </div>
 
         {/* footer right */}
@@ -38,10 +42,10 @@ const Footer = () => {
           </div>
 
           <div className="social">
-            <FaFacebook size={20} style={{ color: "#fff",marginRight:"1rem" }} />
-            <FaInstagram size={20} style={{ color: "#fff" ,marginRight:"1rem"}} />
+            <FaFacebook size={20} style={{ color: "#fff",marginRight:"1rem" }}  onClick={() => handleIconClick('https://www.example.com')}/>
+            <FaInstagram size={20} style={{ color: "#fff" ,marginRight:"1rem"}} onClick={() => handleIconClick('https://www.instagram.com/shivaniarvindagrahari/')}/>
             <FaMedal size={20} style={{ color: "#fff" ,marginRight:"1rem"}} />
-            <FaLinkedin size={20} style={{ color: "#fff" ,marginRight:"1rem"}} />
+            <FaLinkedin size={20} style={{ color: "#fff" ,marginRight:"1rem"}} onClick={() => handleIconClick('https://www.linkedin.com/in/shivanigupta-722443/')} />
           </div>
         </div>
       </div>

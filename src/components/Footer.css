@@ -7,7 +7,7 @@
 
 .footer-container{
     /* position: space-between; */
-    max-width: 1040px;
+    max-width: 1140px;
     margin: auto;
     display:grid;
     grid-template-columns: repeat(2,1fr);
@@ -27,7 +27,7 @@
 .location{
     display:flex;
     flex-direction: row;
-    margin-bottom: 0.8rem;
+    /* margin-bottom: 0.8rem; */
     justify-content:space-between ;
 }
 
@@ -38,7 +38,7 @@
 .phone{
     display:flex;
     flex-direction: row;
-    margin-bottom: 0.8rem;
+    /* margin-bottom: 0.8rem; */
 }
 
 .phone p{
@@ -48,7 +48,7 @@
 .email{
     display:flex;
     flex-direction: row;
-    margin-bottom: 0.8rem;
+    /* margin-bottom: 0.8rem; */
 }
 
 .email p{
@@ -69,4 +69,14 @@ h4{
 
 p{
     font-size: 1.2rem;
+}
+
+
+@media screen and (max-width:640px){
+
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+
+    
 }

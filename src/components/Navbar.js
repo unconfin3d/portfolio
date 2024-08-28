@@ -1,8 +1,9 @@
 import "./Navbar.css";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link ,useLocation} from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
+// import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -17,6 +18,8 @@ const Navbar = () => {
   }
 
   window.addEventListener("scroll",handleColor)
+  // const location = useLocation();
+
 
   return (
     <div className={color?"header header-bg":"header"}>
@@ -25,6 +28,9 @@ const Navbar = () => {
       </Link>
 
       <ul className={click?"nav-menu active":"nav-menu"}>
+      {/* <TransitionGroup component={null}>
+      <CSSTransition key={location.key} classNames="slide" timeout={3000}> */}
+        {/* <> */}
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -37,6 +43,9 @@ const Navbar = () => {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
+        {/* </> */}
+        {/* </CSSTransition>
+        </TransitionGroup> */}
       </ul>
       {console.log(click)}
       <div className="barStyle" onClick={handleClick}>

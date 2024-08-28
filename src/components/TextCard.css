@@ -1,0 +1,73 @@
+
+.containerText {
+    margin-top: 6rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    width: 30rem;
+    height: auto;
+  }
+  
+
+  .containerText h3 {
+    color: rgb(193, 166, 238);
+    margin-bottom: 1rem;
+  }
+  
+
+  .containerText p {
+    color: rgb(193, 166, 238);
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 640px) {
+    .containerText {
+      padding: 2rem;
+      margin-bottom:1rem;
+      width:30%;
+    }
+    .parent-div {
+        width: 10%; 
+        padding: 1rem; 
+      }
+
+    .lottie-container {
+    width: 30%; 
+    height: auto; 
+    margin-top: -3rem;
+    }
+
+    .btn-container .btn {
+    margin-left: 0;
+    }
+  }
+
+  .parent-div {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+
+.lottie-container {
+    width: 50rem;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-container .btn {
+    margin-top:2rem;
+  }
+  
+
+  
+  

@@ -1,22 +1,22 @@
-.imageStyle{
+.image1Style{
     width:100%;
     height:100%
 
 }
-.imageStyle .content{
+.image1Style .content{
     position:absolute;
-    transform:translate(-50%,-50%);
-    top:50%;
+    transform:translate(-50%,-90%);
+    top:35%;
     left:50%;
     text-align: center;
 }
 
-.imageStyle .content h1{
+.image1Style .content h1{
     font-size: 4rem;
-    padding:0.2rem 0 0.2rem;
+    padding:0 0 0.2rem;
 }
 
-.imageStyle .content p{
+.image1Style .content p{
     font-size: 1.4rem;
     text-transform:uppercase;
     font-weight: 200;
@@ -26,22 +26,22 @@
     margin:1rem 0.2rem;
 }
 
-.maskStyle{
+.mask1Style{
     width:100%;
-    height:100vh;
+    height:40vh;
     position:relative;
 }
-.into-img{
+.intos-img{
     width:100%;
     height:100%;
     background-size: cover;
     background-position: center;
     object-fit: cover;
-    /* animation: fadeIn 4.5s ease-in-out; */
+    animation: fadeIn 1.5s ease-in-out;
     /* animation: zoomIn 1.5s ease-in-out; */
-    animation: pixelCollect 2.5s ease-in-out forwards;
+    /* animation: pixelCollect 2s ease-in-out forwards; */
 }
-.maskStyle::after{
+.mask1Style::after{
     content:"";
     width:100%;
     height:100%;
@@ -55,17 +55,18 @@
 @media screen and (max-width:640px){
 
 
-    .imageStyle .content h1{
+    .image1Style .content h1{
         font-size: 3rem;
     }
     
-    .imageStyle .content p{
+    .image1Style .content p{
         font-size: 1.4rem;
         
     }
 
 
 }
+
 
 @keyframes fadeIn {
     from {
